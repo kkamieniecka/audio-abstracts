@@ -48,6 +48,8 @@ associations between epigenetic variation and phenotype. ...
   450k -> four-fifty-kay
 ```
 
+The running example throughout this repository is [EWAS-Galaxy](https://doi.org/10.1101/553784), which I wrote and published as first author under my maiden name, Katarzyna Murat. Without a dictionary, the model cannot say its title.
+
 Then add a key and synthesise:
 
 ```bash
