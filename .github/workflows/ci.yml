@@ -1,0 +1,30 @@
+name: ci
+
+# The whole test suite runs without an ElevenLabs API key and without
+# network access: Europe PMC responses come from a fixture and the API
+# client is exercised against a stub session. A contributor can therefore
+# fork this repository and get a green tick before signing up for
+# anything.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install --upgrade pip
+      - run: pip install -e ".[dev]"
+      - run: ruff check src tests
+      - run: ruff format --check src tests
+      - run: pytest

@@ -1,0 +1,9 @@
+EWAS-Galaxy: a tools suite for population epigenetics integrated into Galaxy.
+
+Murat and colleagues in a preprint in 2019.
+
+Background. Epigenome-wide association studies (EWAS) analyse genome-wide activity of epigenetic marks in cohorts of different individuals to find associations between epigenetic variation and phenotype. One of the most common technique used in EWAS studies is the Infinium Methylation Assay, which quantifies the DNA methylation level of over 450k loci. Although a number of bioinformatics tools have been developed to analyse the assay they require some programming skills and experience to use them.
+
+Results. We have developed a collection of user-friendly tools for the Galaxy platform for those without experience aimed at DNA methylation analysis using the Infinium Methylation Assay. Our tool suite is integrated into Galaxy, web based platform. This allows users to analyse data from the Infinium Methylation Assay in the easiest possible way.
+
+Conclusions. The EWAS suite provides a group of integrated tools that combine analytical methods into a range of handy analysis pipelines. Our tool suite is available from the Galaxy test toolshed, GitHub repository and also as a Docker image. The aim of this project is to make EWAS analysis more flexible and accessible to everyone.
