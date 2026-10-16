@@ -19,13 +19,15 @@ Everything below is implemented in [audio-abstracts](https://github.com/kkamieni
 
 ## Why this is worth your time
 
-I work on epigenomics pipelines. A colleague with dyslexia asked whether she could *listen* to the week's preprints instead of reading them, the way she listens to audiobooks. The answer should obviously be yes — the models are good enough, and the abstracts are already machine-readable.
+I work on epigenomics pipelines, and I wanted to hear a paper rather than read one. I started with my own: EWAS-Galaxy, a tool suite I published in 2019. It seemed a reasonable thing to hand to a text-to-speech API on a Friday afternoon.
 
-The first attempt was unusable. Not because the voice was bad; the voice was excellent. It was because the first sentence came out as:
+The first attempt was unusable. Not because the voice was bad — the voice was excellent. It could not say the title.
+
+The abstract was no better:
 
 > "Epigenome-wide association studies, cupig islands, measured on the grutch thirty-eight assembly…"
 
-Three domain terms, three mispronunciations, and she had stopped listening. This is a solved problem, but the solution is in a corner of the API that general tutorials skip. Here it is.
+Three domain terms, three mispronunciations, in a paper with my own name on it. This is a solved problem, but the solution sits in a corner of the API that general tutorials skip. Here it is.
 
 ---
 
